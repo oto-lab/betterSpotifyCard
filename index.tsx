@@ -1,7 +1,8 @@
 import { definePluginSettings } from "@api/Settings";
+import { Text } from "@components/Text";
 import { Devs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
-import { PresenceStore, Text } from "@webpack/common";
+import { PresenceStore } from "@webpack/common";
 
 const settings = definePluginSettings({
     artistSeparator: {
@@ -50,7 +51,7 @@ export default definePlugin({
     settings,
     AlbumText(presence) {
         if (!settings.store.showAlbumName) return <></>;
-        return <Text variant="text-xs/normal" style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }} >
+        return <Text size="xs" weight="normal" style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }} >
             {presence.assets.large_text}
         </Text>;
     },

@@ -1,5 +1,7 @@
 # BetterSpotifyCard
 
+Fork of [userplugins/betterSpotifyCard](https://git.nin0.dev/userplugins/betterSpotifyCard) with fixes for recent Vencord versions.
+
 Show more info on the Spotify activity card
 
 ## Install
